@@ -1,0 +1,19 @@
+<%include partials/header%>
+<div class="ui main text container segment">
+    <div class="ui huge header" >New Blog</div>
+    <form class="ui form" action="/blogs" method="post">
+        <div class="field">
+                <input type="text" name="blog[title]" placeholder="Title" autocomplete="off">
+        </div>
+        <div class="field">
+                <input type="url" name="blog[image]" placeholder="Image" autocomplete="off">
+        </div>
+        <div class="field">
+            <textarea name="blog[body]" cols="30" rows="10" placeholder="Blog Content Here" required></textarea>
+        </div>
+        <div class="field">
+                <input type="submit" class="ui purple button large">
+            </div>
+    </form>
+</div>
+<%include partials/footer%>
